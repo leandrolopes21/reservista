@@ -85,11 +85,11 @@
 
             var valor = Number(num.value);
 
-            if (valor == '') { // Leia-se (se valor for menor que 16 ou maior que 65)
+            if (valor == '') { // Leia-se (se valor for vazio)
                 resposta.innerHTML = 'Sem dados!';
-            } else if (valor < 16 || valor > 65) { // Leia-se (se valor for menor que 18)
+            } else if (valor < 18 || valor > 65) { // Leia-se (se valor for menor que 18 ou maior que 65)
                 resposta.innerHTML = 'Você não é reservista!';
-            } else {
+            } else { // Leia-se senão
                 resposta.innerHTML = 'Você é reservista e se houver uma guerra é obrigatória sua apresentação!';
             }
 
